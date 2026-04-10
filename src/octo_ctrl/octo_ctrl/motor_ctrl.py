@@ -6,6 +6,7 @@ import time
 from . import pump_lib as pump
 from std_msgs.msg import Int64
 from std_msgs.msg import Bool
+from example_interfaces.srv import AddTwoInts
 
 class MotorCtrl(Node):
     def __init__(self):
@@ -28,11 +29,19 @@ class MotorCtrl(Node):
         self.current_pos = 0
         #self.motor_cmd_flag = True
         print("Controlling peristaltic pump for octopus tentacles")
+        #     self.srv = self.create_service(AddTwoInts, 'motor_control', self.motor_req_callback)
         self.timer_ctrl = self.create_timer(self.Timer_period,
                                             self.automatic_ctrl_volume
                                             )
 
-    
+
+    # def motor_req_callback(self, request, response):
+    #     self.get_logger().info('Motor control requested via service call.')
+    #     self.steps = request.a
+    #     self.automatic_ctrl_volume()
+    #     response.sum = 1
+    #    return response
+
     def init_pump(self):
         self.MAX_SPEED = 1000000 #128000000 # 50000000 #128000000 #2000000
         self.MAX_ACCELERATION = 70000 #640000 #2000000  #

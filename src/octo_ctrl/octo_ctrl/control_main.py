@@ -7,6 +7,7 @@ from . import pump_lib as pump
 from . import color_gen_lib as color_gen
 
 from std_srvs.srv import Trigger
+from example_interfaces.srv import AddTwoInts
 from std_msgs.msg import Int64
 from std_msgs.msg import Bool
 
@@ -54,6 +55,13 @@ class OctopusControl(Node):
         while not self.color_client.wait_for_service(timeout_sec=1.0):
           self.get_logger().info('service not available, waiting again...')
         self.color_req = Trigger.Request()
+
+        ## EXPERIMENTAL - AUTOMATIC Motor control service
+        # self.motor_client = self.create_client(AddTwoInts, 'motor_control')
+        # while not self.motor_client.wait_for_service(timeout_sec=1.0):
+        #   self.get_logger().info('service not available, waiting again...')
+        # self.motor_req = AddTwoInts.Request()
+
         self.pub_motor_cmd = self.create_publisher(Int64, 'motor_cmd', 1) # Or Int64
         self.motor_cmd = Int64()
         self.motor_flag_sub = self.create_subscription(
@@ -115,6 +123,22 @@ class OctopusControl(Node):
         self.target_color = resp.message
         self.get_logger().info(f"Target color set to: {self.target_color}")
 
+    # def request_motor_control(self, steps):
+    #     self.motor_req.a = steps
+    #     self.motor_req.b = 0 # Placeholder for additional parameters if needed
+    #     future = self.motor_client.call_async(self.motor_req)
+    #     rclpy.spin_until_future_complete(self, future)
+
+    #     if future.result() is None:
+    #         self.get_logger().error("motor_control service call failed or returned no result")
+    #         return
+        
+    #     resp = future.result()
+    #     self.motor_flag = resp.sum
+    #     if self.motor_flag == 1:
+    #         self.get_logger().info("Motor command executed successfully")
+    #     elif self.motor_flag == 0:
+    #         self.get_logger().error("Motor command execution failed")
 
     def manual_color_generation(self): # 000000, 3E5E8F
         #prev_color =input("Enter previous color in HEX format (e.g., #FF0000 for red): ")
@@ -315,6 +339,7 @@ class OctopusControl(Node):
 
     def auto_pump_control(self, volume):
         steps = pump.volume_to_steps(float(volume), self.STEP_MODE)
+        #self.request_motor_control(steps)
         self.motor_cmd.data = steps
         self.pub_motor_cmd.publish(self.motor_cmd)
         print("Controlling peristaltic pump for octopus tentacles")
@@ -401,32 +426,63 @@ class OctopusControl(Node):
 
         print("Generating skin color for octopus tentacles")
         self.Auto_EPM_control([0, 0, 0]) # Turn off all EPMs
-        self.auto_pump_control(float(v)) # Infuse Clear
         print("Infusing clear color for octopus skin")
+        self.auto_pump_control(float(v)) # Infuse Clear
+        while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+            time.sleep(0.1)
         
         self.target_color = color_options['Black']
         self.auto_color_generation()
         print("Infusing black color for octopus skin")
         self.auto_pump_control(float(v)) # Withdraw Clear
+        while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+            time.sleep(0.1)
 
         self.target_color = color_options['Yellow']
         self.auto_color_generation()
         print("Infusing yellow color for octopus skin")
         self.auto_pump_control(float(v)) # Infuse Yellow
+        while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+            time.sleep(0.1)
 
         self.target_color = color_options['Blue']
         self.auto_color_generation()
         print("Infusing blue color for octopus skin")
         self.auto_pump_control(float(v)) # Infuse Blue
+        while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+            time.sleep(0.1)
 
         self.target_color = color_options['Clear']
         self.auto_color_generation()
         print("Infusing clear color to wash out octopus skin")
         self.auto_pump_control(float(v)) # Withdraw to clear
+        while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+            time.sleep(0.1)
 
         self.Auto_EPM_control([1, 1, 1]) # Turn off all EPMs
 
-    def grasping_demo
+    def grasping_demo(self):
+        # RECALL GREEN COLOR
+        def repeating_process(volume: float):
+            self.recall_target_color()
+            self.auto_color_generation()
+            time.sleep(0.1) # Wait for EPMs to activate
+            self.auto_pump_control(float(volume)) # Infuse to extend
+            while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+                time.sleep(0.1)
+            self.auto_pump_control(float(-volume)) # Infuse to extend
+            while not self.motor_flag: # Wait until previous motor command is executed before sending new command
+                time.sleep(0.1)
+    
+        volume = input("Enter volume to pump for grasping demo (mL): ")
+        print("Starting grasping demo for octopus tentacles")
+        self.Auto_EPM_control([1, 0, 0]) # Turn on EPMs
+        
+        for i in range(2):
+            repeating_process(float(volume))
+        self.Auto_EPM_control([0, 0, 0]) # Turn off all EPMs
+        
+        
 
 
 
