@@ -1,0 +1,11 @@
+BASE PATH::> C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2>
+Commands
+call \dev\ros2_jazzy\local_setup.bat
+call install\setup.bat
+
+ros2 run octo_ctrl camera
+ros2 run octo_ctrl octoctrl
+ros2 run octo_ctrl motor_ctrl
+colcon build --merge-install
+
+12 8 16ml control
