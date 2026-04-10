@@ -47,7 +47,8 @@ class OctopusControl(Node):
             'exit': self.end_loop,
             'curvature_ctrl': self.curvature_control,
             'manual_color_gen': self.manual_color_generation,
-            'skin_color_gen': self.skin_color_generation,
+            'skin_color_demo': self.skin_color_demo,
+            'grasping_demo': self.grasping_demo
         }
         self.color_client = self.create_client(Trigger, 'color_detection')
         while not self.color_client.wait_for_service(timeout_sec=1.0):
@@ -388,7 +389,7 @@ class OctopusControl(Node):
         self.Auto_EPM_control([0 if x else 0 for x in direction]) # Turn off all EPMs
 
     # DEMO FUNCTIONS
-    def skin_color_generation(self):
+    def skin_color_demo(self):
         desired_color_cmd = 'c_'
         color_options = {
             'Clear': '#FFFFFF',
@@ -425,7 +426,7 @@ class OctopusControl(Node):
 
         self.Auto_EPM_control([1, 1, 1]) # Turn off all EPMs
 
-
+    def grasping_demo
 
 
 
