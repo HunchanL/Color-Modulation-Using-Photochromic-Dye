@@ -1,0 +1,29 @@
+running egg_info
+writing ..\..\build\octo_ctrl\octo_ctrl.egg-info\PKG-INFO
+writing dependency_links to ..\..\build\octo_ctrl\octo_ctrl.egg-info\dependency_links.txt
+writing entry points to ..\..\build\octo_ctrl\octo_ctrl.egg-info\entry_points.txt
+writing requirements to ..\..\build\octo_ctrl\octo_ctrl.egg-info\requires.txt
+writing top-level names to ..\..\build\octo_ctrl\octo_ctrl.egg-info\top_level.txt
+reading manifest file '..\..\build\octo_ctrl\octo_ctrl.egg-info\SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '..\..\build\octo_ctrl\octo_ctrl.egg-info\SOURCES.txt'
+running build
+running build_py
+copying octo_ctrl\control_main_test.py -> C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build\lib\octo_ctrl
+running install
+running install_lib
+copying C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build\lib\octo_ctrl\control_main_test.py -> C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl
+byte-compiling C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl\control_main_test.py to control_main_test.cpython-38.pyc
+running install_data
+running install_egg_info
+removing 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ..\..\build\octo_ctrl\octo_ctrl.egg-info to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl-0.0.0-py3.8.egg-info
+running install_scripts
+Installing camera-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing camera.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing motion_detect-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing motion_detect.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing motor_ctrl-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing motor_ctrl.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing octoctrl-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+Installing octoctrl.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl

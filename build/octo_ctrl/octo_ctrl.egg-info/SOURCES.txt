@@ -16,7 +16,9 @@ octo_ctrl/camera_red_detect.py
 octo_ctrl/camera_rgb_detect.py
 octo_ctrl/color_gen_lib.py
 octo_ctrl/control_main.py
+octo_ctrl/control_main_test.py
 octo_ctrl/motor_ctrl.py
+octo_ctrl/motor_ctrl_test.py
 octo_ctrl/pump_lib.py
 resource/octo_ctrl
 test/test_copyright.py

@@ -1,0 +1,31 @@
+[2.079s] Invoking command in 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\src\octo_ctrl': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin; PYTHONPATH=C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\prefix_override;c:\python38\lib\site-packages\colcon_core\task\python\colcon_distutils_commands;C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages;%PYTHONPATH% c:\python38\python.exe -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ..\..\build\octo_ctrl build --build-base C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build install --record C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\install.log --single-version-externally-managed install_data
+[2.766s] running egg_info
+[2.766s] writing ..\..\build\octo_ctrl\octo_ctrl.egg-info\PKG-INFO
+[2.766s] writing dependency_links to ..\..\build\octo_ctrl\octo_ctrl.egg-info\dependency_links.txt
+[2.766s] writing entry points to ..\..\build\octo_ctrl\octo_ctrl.egg-info\entry_points.txt
+[2.766s] writing requirements to ..\..\build\octo_ctrl\octo_ctrl.egg-info\requires.txt
+[2.766s] writing top-level names to ..\..\build\octo_ctrl\octo_ctrl.egg-info\top_level.txt
+[2.782s] reading manifest file '..\..\build\octo_ctrl\octo_ctrl.egg-info\SOURCES.txt'
+[2.782s] adding license file 'LICENSE'
+[2.782s] writing manifest file '..\..\build\octo_ctrl\octo_ctrl.egg-info\SOURCES.txt'
+[2.782s] running build
+[2.782s] running build_py
+[2.797s] running install
+[2.797s] running install_lib
+[2.797s] running install_data
+[2.797s] running install_egg_info
+[2.797s] removing 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl-0.0.0-py3.8.egg-info' (and everything under it)
+[2.813s] Copying ..\..\build\octo_ctrl\octo_ctrl.egg-info to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl-0.0.0-py3.8.egg-info
+[2.829s] running install_scripts
+[2.860s] Installing camera-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.860s] Installing camera.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.875s] Installing motion_detect-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.875s] Installing motion_detect.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.875s] Installing motor_ctrl-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.875s] Installing motor_ctrl.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.875s] Installing octoctrl-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.875s] Installing octoctrl.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[2.891s] writing list of installed files to 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\install.log'
+[2.907s] Invoked command in 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\src\octo_ctrl' returned '0': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin; PYTHONPATH=C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\prefix_override;c:\python38\lib\site-packages\colcon_core\task\python\colcon_distutils_commands;C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages;%PYTHONPATH% c:\python38\python.exe -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ..\..\build\octo_ctrl build --build-base C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build install --record C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\install.log --single-version-externally-managed install_data

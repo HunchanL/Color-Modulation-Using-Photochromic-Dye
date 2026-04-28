@@ -25,7 +25,7 @@ def volume_to_steps(v: float, stepmode: int = 1):
     else:
         dir = 1
     rev = 0.827 * abs(v) + 0.2557 # Linear regression based on empirical data
-    steps = -rev * 200 * stepmode * dir # 200 steps per revolution, adjusted for step mode
+    steps = rev * 200 * stepmode * dir # 200 steps per revolution, adjusted for step mode
     return int(steps)
 '''
 Functions to set up motor
@@ -68,9 +68,9 @@ def set_step_mode(motor_num, STEP_MODE, MAX_SPEED, MAX_ACCELERATION):
     # MAX_ACCELERATION = 640000 
     
     ticcmd('-d', str(motor_num), '--step-mode', str(STEP_MODE))  # Set the step mode
-    ticcmd('-d', str(motor_num), '--max-speed', str(MAX_SPEED))  # Update the controller’s max speed limit
-    ticcmd('-d', str(motor_num), '--max-accel', str(MAX_ACCELERATION))
-    ticcmd('-d', str(motor_num), '--max-decel', str(MAX_ACCELERATION))
+    ticcmd('-d', str(motor_num), '--max-speed', str(int(MAX_SPEED)))  # Update the controller's max speed limit
+    ticcmd('-d', str(motor_num), '--max-accel', str(int(MAX_ACCELERATION)))
+    ticcmd('-d', str(motor_num), '--max-decel', str(int(MAX_ACCELERATION)))
     print(f"Step mode set to {STEP_MODE}, Max speed updated to {MAX_SPEED}.")
 
 def set_exit_safe_start(motor_num):

@@ -1,0 +1,34 @@
+[2.390s] Invoking command in 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\src\octo_ctrl': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin; PYTHONPATH=C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\prefix_override;c:\python38\lib\site-packages\colcon_core\task\python\colcon_distutils_commands;C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages;%PYTHONPATH% c:\python38\python.exe -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ..\..\build\octo_ctrl build --build-base C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build install --record C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\install.log --single-version-externally-managed install_data
+[3.218s] running egg_info
+[3.218s] writing ..\..\build\octo_ctrl\octo_ctrl.egg-info\PKG-INFO
+[3.218s] writing dependency_links to ..\..\build\octo_ctrl\octo_ctrl.egg-info\dependency_links.txt
+[3.218s] writing entry points to ..\..\build\octo_ctrl\octo_ctrl.egg-info\entry_points.txt
+[3.218s] writing requirements to ..\..\build\octo_ctrl\octo_ctrl.egg-info\requires.txt
+[3.218s] writing top-level names to ..\..\build\octo_ctrl\octo_ctrl.egg-info\top_level.txt
+[3.218s] reading manifest file '..\..\build\octo_ctrl\octo_ctrl.egg-info\SOURCES.txt'
+[3.234s] adding license file 'LICENSE'
+[3.234s] writing manifest file '..\..\build\octo_ctrl\octo_ctrl.egg-info\SOURCES.txt'
+[3.234s] running build
+[3.234s] running build_py
+[3.234s] copying octo_ctrl\motor_ctrl_test.py -> C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build\lib\octo_ctrl
+[3.250s] running install
+[3.250s] running install_lib
+[3.250s] copying C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build\lib\octo_ctrl\motor_ctrl_test.py -> C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl
+[3.265s] byte-compiling C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl\motor_ctrl_test.py to motor_ctrl_test.cpython-38.pyc
+[3.265s] running install_data
+[3.265s] running install_egg_info
+[3.281s] removing 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl-0.0.0-py3.8.egg-info' (and everything under it)
+[3.281s] Copying ..\..\build\octo_ctrl\octo_ctrl.egg-info to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages\octo_ctrl-0.0.0-py3.8.egg-info
+[3.296s] running install_scripts
+[3.343s] Installing camera-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing camera.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing motion_detect-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing motion_detect.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing motor_ctrl-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing motor_ctrl.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing octoctrl-script.py script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] Installing octoctrl.exe script to C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\lib\octo_ctrl
+[3.343s] writing list of installed files to 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\install.log'
+[3.359s] Invoked command in 'C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\src\octo_ctrl' returned '0': PUBLIC=%PUBLIC%
+PyCharm Community Edition=C:\Program Files\JetBrains\PyCharm Community Edition 2022.3.3\bin; PYTHONPATH=C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\prefix_override;c:\python38\lib\site-packages\colcon_core\task\python\colcon_distutils_commands;C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\install\Lib\site-packages;%PYTHONPATH% c:\python38\python.exe -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ..\..\build\octo_ctrl build --build-base C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\build install --record C:\Users\lhc15\OneDrive\Research\1P_Camouflage Octopus\ros2\build\octo_ctrl\install.log --single-version-externally-managed install_data

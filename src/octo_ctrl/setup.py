@@ -20,9 +20,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'octoctrl = octo_ctrl.control_main:main',
+            'octoctrl = octo_ctrl.control_main_test:main',
             'camera = octo_ctrl.camera:main',
-            'motor_ctrl = octo_ctrl.motor_ctrl:main',
+            'motor_ctrl = octo_ctrl.motor_ctrl_test:main',
             'motion_detect = octo_ctrl.camera_motion_detect:main',
         ],
     },

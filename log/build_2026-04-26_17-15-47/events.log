@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000000] (octo_ctrl) JobQueued: {'identifier': 'octo_ctrl', 'dependencies': OrderedDict()}
+[0.000000] (octo_ctrl) JobStarted: {'identifier': 'octo_ctrl'}
+[0.031000] (octo_ctrl) JobEnded: {'identifier': 'octo_ctrl', 'rc': 0}
+[0.031000] (-) EventReactorShutdown: {}

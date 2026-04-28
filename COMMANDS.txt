@@ -8,4 +8,6 @@ ros2 run octo_ctrl octoctrl
 ros2 run octo_ctrl motor_ctrl
 colcon build --merge-install
 
+
+Keep EPM voltage at 19.2v
 12 8 16ml control

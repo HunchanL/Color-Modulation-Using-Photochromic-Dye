@@ -1,6 +1,6 @@
 [console_scripts]
 camera = octo_ctrl.camera:main
 motion_detect = octo_ctrl.camera_motion_detect:main
-motor_ctrl = octo_ctrl.motor_ctrl:main
-octoctrl = octo_ctrl.control_main:main
+motor_ctrl = octo_ctrl.motor_ctrl_test:main
+octoctrl = octo_ctrl.control_main_test:main
 
